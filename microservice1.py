@@ -35,5 +35,5 @@ def check_():
                 if mili >= max_duration:
                     return {"speech_exists": f"Maximum duration ({max_duration / 1000} seconds) reached...."}
                 return {
-                    "speech_exists": f"Breaking at: {mili} because speech has ended at {mili - (checker_duration * end_steps)}"}
+                    "speech_exists": f"Breaking at: {mili / 1000}s because speech the has ended at {(mili/1000) - ((checker_duration * end_steps) / 1000)}s."}
     return {"speech_exists": False}
