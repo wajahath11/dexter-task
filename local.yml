@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  microservice1:
+    build:
+      context: .
+      dockerfile: Dockerfile.microservice1
+    ports:
+      - 8000:8000
+
+  microservice2:
+    build:
+      context: .
+      dockerfile: Dockerfile.microservice2
+    ports:
+      - 8001:8001
